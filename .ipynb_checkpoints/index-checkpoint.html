@@ -1,0 +1,433 @@
+<html>
+
+<head>
+  <title>custom_bowties</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <h1>Front Side</h1>
+
+
+
+
+
+<style>
+  /* Add CSS to display dropdowns vertically with spacing */
+  .dropdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .dropdown-container select {
+    margin-bottom: 20px;
+  }
+
+
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+  }
+</style>
+
+
+
+
+
+
+<style>
+  /* CSS to center the image container and position the select */
+  .image-container {
+    text-align: left;
+  }
+
+  select {
+    position: relative;
+    z-index: 1;
+  }
+</style>
+
+
+
+
+
+
+<div id="image-container">
+  <img id="image1" src="center_colors/white.png" alt="Image 1" width="600">
+  <img id="image2" src="front_colors/white.png" alt="Image 2" width="600">
+  <img id="image3" src="back_colors/white.png" alt="Image 3" width="600">
+  <img id="image4" src="strap_colors/white.png" alt="Image 4" width="600">
+  <img id="image5" src="logo/transparent.png" alt="Image 5" width="600">
+
+</div>
+
+
+
+<label for="image1-select">Center Color:</label>
+<select id="image1-select">
+  <option value="white">white</option>
+  <option value="banana">banana</option>
+  <option value="bay">bay</option>
+  <option value="berry">berry</option>
+  <option value="black">black</option>
+  <option value="blossom">blossom</option>
+  <option value="blue_jean">blue_jean</option>
+  <option value="blue_spruce">blue_spruce</option>
+  <option value="brick">brick</option>
+  <option value="bright_salmon">bright_salmon</option>
+  <option value="burnt_orange">burnt_orange</option>
+  <option value="butter">butter</option>
+  <option value="celedon">celedon</option>
+  <option value="celery">celery</option>
+  <option value="chambray">chambray</option>
+  <option value="chili">chili</option>
+  <option value="chili_pepper">chili_pepper</option>
+  <option value="china_blue">china_blue</option>
+  <option value="chocolate">chocolate</option>
+  <option value="citrus">citrus</option>
+  <option value="crimson">crimson</option>
+  <option value="crunchberry">crunchberry</option>
+  <option value="cumin">cumin</option>
+  <option value="denim">denim</option>
+  <option value="emerald">emerald</option>
+  <option value="flo_blue">flo_blue</option>
+  <option value="granite">granite</option>
+  <option value="grape">grape</option>
+  <option value="graphite">graphite</option>
+  <option value="grass">grass</option>
+  <option value="grey">grey</option>
+  <option value="hemp">hemp</option>
+  <option value="ice_blue">ice_blue</option>
+  <option value="ivory">ivory</option>
+  <option value="khaki">khaki</option>
+  <option value="kiwi">kiwi</option>
+  <option value="lagoon_blue">lagoon_blue</option>
+  <option value="light_green">light_green</option>
+  <option value="lime">lime</option>
+  <option value="mango">mango</option>
+  <option value="melon">melon</option>
+  <option value="midnight">midnight</option>
+  <option value="moss">moss</option>
+  <option value="mustard">mustard</option>
+  <option value="neon_blue">neon_blue</option>
+  <option value="neon_green">neon_green</option>
+  <option value="neon_pink">neon_pink</option>
+  <option value="neon_red_orange">neon_red_orange</option>
+  <option value="neon_yellow">neon_yellow</option>
+  <option value="paprika">paprika</option>
+  <option value="peony">peony</option>
+  <option value="pepper">pepper</option>
+  <option value="periwinkle">periwinkle</option>
+  <option value="purple">purple</option>
+  <option value="red">red</option>
+  <option value="royal_caribe">royal_caribe</option>
+  <option value="sage">sage</option>
+  <option value="sandstone">sandstone</option>
+  <option value="sapphire">sapphire</option>
+  <option value="sea">sea</option>
+  <option value="seafoam">seafoam</option>
+  <option value="true_navy">true_navy</option>
+  <option value="violet">violet</option>
+  <option value="washed_denim">washed_denim</option>
+  <option value="watermelon">watermelon</option>
+  <option value="white">white</option>
+  <option value="willow">willow</option>
+  <option value="yam">yam</option>
+</select>
+
+
+
+<label for="image2-select">Front Color:</label>
+<select id="image2-select">
+  <option value="white">white</option>
+  <option value="banana">banana</option>
+    <option value="bay">bay</option>
+    <option value="berry">berry</option>
+    <option value="black">black</option>
+    <option value="blossom">blossom</option>
+    <option value="blue_jean">blue_jean</option>
+    <option value="blue_spruce">blue_spruce</option>
+    <option value="brick">brick</option>
+    <option value="bright_salmon">bright_salmon</option>
+    <option value="burnt_orange">burnt_orange</option>
+    <option value="butter">butter</option>
+    <option value="celedon">celedon</option>
+    <option value="celery">celery</option>
+    <option value="chambray">chambray</option>
+    <option value="chili">chili</option>
+    <option value="chili_pepper">chili_pepper</option>
+    <option value="china_blue">china_blue</option>
+    <option value="chocolate">chocolate</option>
+    <option value="citrus">citrus</option>
+    <option value="crimson">crimson</option>
+    <option value="crunchberry">crunchberry</option>
+    <option value="cumin">cumin</option>
+    <option value="denim">denim</option>
+    <option value="emerald">emerald</option>
+    <option value="flo_blue">flo_blue</option>
+    <option value="granite">granite</option>
+    <option value="grape">grape</option>
+    <option value="graphite">graphite</option>
+    <option value="grass">grass</option>
+    <option value="grey">grey</option>
+    <option value="hemp">hemp</option>
+    <option value="ice_blue">ice_blue</option>
+    <option value="ivory">ivory</option>
+    <option value="khaki">khaki</option>
+    <option value="kiwi">kiwi</option>
+    <option value="lagoon_blue">lagoon_blue</option>
+    <option value="light_green">light_green</option>
+    <option value="lime">lime</option>
+    <option value="mango">mango</option>
+    <option value="melon">melon</option>
+    <option value="midnight">midnight</option>
+    <option value="moss">moss</option>
+    <option value="mustard">mustard</option>
+    <option value="neon_blue">neon_blue</option>
+    <option value="neon_green">neon_green</option>
+    <option value="neon_pink">neon_pink</option>
+    <option value="neon_red_orange">neon_red_orange</option>
+    <option value="neon_yellow">neon_yellow</option>
+    <option value="paprika">paprika</option>
+    <option value="peony">peony</option>
+    <option value="pepper">pepper</option>
+    <option value="periwinkle">periwinkle</option>
+    <option value="purple">purple</option>
+    <option value="red">red</option>
+    <option value="royal_caribe">royal_caribe</option>
+    <option value="sage">sage</option>
+    <option value="sandstone">sandstone</option>
+    <option value="sapphire">sapphire</option>
+    <option value="sea">sea</option>
+    <option value="seafoam">seafoam</option>
+    <option value="true_navy">true_navy</option>
+    <option value="violet">violet</option>
+    <option value="washed_denim">washed_denim</option>
+    <option value="watermelon">watermelon</option>
+    <option value="white">white</option>
+    <option value="willow">willow</option>
+    <option value="yam">yam</option>
+</select>
+
+
+
+
+<label for="image3-select">Back Color:</label>
+<select id="image3-select">
+  <option value="white">white</option>
+  <option value="banana">banana</option>
+    <option value="bay">bay</option>
+    <option value="berry">berry</option>
+    <option value="black">black</option>
+    <option value="blossom">blossom</option>
+    <option value="blue_jean">blue_jean</option>
+    <option value="blue_spruce">blue_spruce</option>
+    <option value="brick">brick</option>
+    <option value="bright_salmon">bright_salmon</option>
+    <option value="burnt_orange">burnt_orange</option>
+    <option value="butter">butter</option>
+    <option value="celedon">celedon</option>
+    <option value="celery">celery</option>
+    <option value="chambray">chambray</option>
+    <option value="chili">chili</option>
+    <option value="chili_pepper">chili_pepper</option>
+    <option value="china_blue">china_blue</option>
+    <option value="chocolate">chocolate</option>
+    <option value="citrus">citrus</option>
+    <option value="crimson">crimson</option>
+    <option value="crunchberry">crunchberry</option>
+    <option value="cumin">cumin</option>
+    <option value="denim">denim</option>
+    <option value="emerald">emerald</option>
+    <option value="flo_blue">flo_blue</option>
+    <option value="granite">granite</option>
+    <option value="grape">grape</option>
+    <option value="graphite">graphite</option>
+    <option value="grass">grass</option>
+    <option value="grey">grey</option>
+    <option value="hemp">hemp</option>
+    <option value="ice_blue">ice_blue</option>
+    <option value="ivory">ivory</option>
+    <option value="khaki">khaki</option>
+    <option value="kiwi">kiwi</option>
+    <option value="lagoon_blue">lagoon_blue</option>
+    <option value="light_green">light_green</option>
+    <option value="lime">lime</option>
+    <option value="mango">mango</option>
+    <option value="melon">melon</option>
+    <option value="midnight">midnight</option>
+    <option value="moss">moss</option>
+    <option value="mustard">mustard</option>
+    <option value="neon_blue">neon_blue</option>
+    <option value="neon_green">neon_green</option>
+    <option value="neon_pink">neon_pink</option>
+    <option value="neon_red_orange">neon_red_orange</option>
+    <option value="neon_yellow">neon_yellow</option>
+    <option value="paprika">paprika</option>
+    <option value="peony">peony</option>
+    <option value="pepper">pepper</option>
+    <option value="periwinkle">periwinkle</option>
+    <option value="purple">purple</option>
+    <option value="red">red</option>
+    <option value="royal_caribe">royal_caribe</option>
+    <option value="sage">sage</option>
+    <option value="sandstone">sandstone</option>
+    <option value="sapphire">sapphire</option>
+    <option value="sea">sea</option>
+    <option value="seafoam">seafoam</option>
+    <option value="true_navy">true_navy</option>
+    <option value="violet">violet</option>
+    <option value="washed_denim">washed_denim</option>
+    <option value="watermelon">watermelon</option>
+    <option value="white">white</option>
+    <option value="willow">willow</option>
+    <option value="yam">yam</option>
+</select>
+
+
+
+
+
+
+
+<label for="image5-select">Logo Size:</label>
+<select id="image5-select">
+    <option value="1">1 </option>
+    <option value="2">2 </option>
+    <option value="3">3 </option>
+    <option value="4">4 </option>
+    <option value="5">5 </option>
+    <option value="6">6 </option>
+    <option value="7">7 </option>
+    <option value="8">8 </option>
+    <option value="9">9 </option>
+    <option value="10">10 </option>
+
+</select>
+
+
+
+
+
+
+<style>
+#image-container {
+  position: center;
+  width: 500px; /* Adjust the width as needed */
+  height: 500px; /* Adjust the height as needed */
+}
+
+#image1,
+
+
+#image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#image3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+#image4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+
+
+
+#image2 {
+  z-index: -1;
+}
+
+
+
+#image3 {
+  z-index: -2;
+}
+
+
+#image4 {
+  z-index: -3;
+}
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  // Get the necessary elements
+  var image1 = document.getElementById('image1');
+  var image2 = document.getElementById('image2');
+  var image3 = document.getElementById('image3');
+  var image4 = document.getElementById('image4');
+
+  var image1Select = document.getElementById('image1-select');
+  var image2Select = document.getElementById('image2-select');
+  var image3Select = document.getElementById('image3-select');
+
+  // Add event listeners to the select elements
+  image1Select.addEventListener('change', updateImages);
+  image2Select.addEventListener('change', updateImages);
+  image3Select.addEventListener('change', updateImages);
+
+  // Function to update the images based on the selected options
+  function updateImages() {
+    var selectedImage1 = image1Select.value;
+    var selectedImage2 = image2Select.value;
+    var selectedImage3 = image3Select.value;
+
+    // Update the src attribute of the images
+    image1.src = 'center_colors/' + selectedImage1 + '.png';
+    image2.src = 'front_colors/' + selectedImage2 + '.png';
+    image3.src = 'back_colors/' + selectedImage3 + '.png';
+    image4.src = 'strap_colors/' + selectedImage1 + '.png';
+  }
+</script>
+
+
+<body/>
+<html/>
+
+
