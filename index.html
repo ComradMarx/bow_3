@@ -5,8 +5,48 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+
   <h1>FRONT SIZE</h1>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Define flex container styles */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    
+    /* Adjust the iframe size as needed */
+    iframe {
+      width: 20%;
+      height:75px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3; /* Set a higher z-index value */
+
+    }
+  </style>
+</head>
+<body>
+  
+  <iframe src="http://192.168.1.66:5000/"></iframe>
+</body>
+</html>
+
+
+
+
+
 
 
 
@@ -32,13 +72,13 @@
     margin-bottom: 10px;
     width: 100%; /* Set the width to 100% */
     padding: 10px;
-    font-size: 16px;
+    font-size: 46px;
   }
 
   .button {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 80px 160px; /* Increase the padding for larger buttons */
+    font-size: 50px; /* Increase the font size for larger buttons */
     font-weight: bold;
     text-align: center;
     text-decoration: none;
@@ -56,6 +96,7 @@
     align-items: center;
     min-height: 100vh;
     margin: 0; /* Reset the default body margin */
+    padding-bottom: 700px; /* Add some space at the bottom */
   }
 
   /* Media query for mobile devices */
@@ -69,8 +110,8 @@
     }
 
     .button {
-      padding: 8px 16px; /* Adjust the padding for mobile */
-      font-size: 16px; /* Adjust the font size for mobile */
+      padding: 30px 60px; /* Adjust the padding for mobile */
+      font-size: 24px; /* Adjust the font size for mobile */
     }
   }
 </style>
