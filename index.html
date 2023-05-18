@@ -27,8 +27,8 @@
     
     /* Adjust the iframe size as needed */
     iframe {
-      width: 20%;
-      height:75px;
+      width: 22%;
+      height:200px;
       position: absolute;
       top: 0;
       left: 0;
@@ -50,70 +50,27 @@
 
 
 
-
-
 <style>
-  /* Add CSS to display dropdowns vertically with spacing */
-  .dropdown-container {
-    display: flex;
-    flex-direction: column; /* Change the direction to column */
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: white;
-    padding: 20px;
-    box-sizing: border-box;
-  }
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add padding for spacing */
+}
 
-  .dropdown-container select {
-    margin-bottom: 10px;
-    width: 100%; /* Set the width to 100% */
-    padding: 10px;
-    font-size: 46px;
-  }
+.my-dropdown {
+  padding: 20px 50px; /* Adjust padding to increase dropdown size */
+  font-size: 26px; /* Adjust font size if needed */
+  appearance: none;
+  background-color: #ffffff;
+  border: 20px solid #000000;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
-  .button {
-    display: inline-block;
-    padding: 80px 160px; /* Increase the padding for larger buttons */
-    font-size: 50px; /* Increase the font size for larger buttons */
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0; /* Reset the default body margin */
-    padding-bottom: 700px; /* Add some space at the bottom */
-  }
-
-  /* Media query for mobile devices */
-  @media (max-width: 600px) {
-    .dropdown-container {
-      padding: 10px; /* Adjust the padding for mobile */
-    }
-
-    .dropdown-container select {
-      font-size: 14px; /* Adjust the font size for mobile */
-    }
-
-    .button {
-      padding: 30px 60px; /* Adjust the padding for mobile */
-      font-size: 24px; /* Adjust the font size for mobile */
-    }
-  }
+.my-dropdown option {
+  padding: 200px; /* Add padding to make options larger */
+}
 </style>
 
 
@@ -133,8 +90,14 @@
 <style>
   /* CSS to center the image container and position the select */
   .image-container {
-    text-align: left;
+    text-align: center;
   }
+
+
+
+
+
+
 
   select {
     position: relative;
@@ -146,13 +109,12 @@
 
 
 
-
 <div id="image-container">
   <img id="image1" src="center_colors/white.png" alt="Image 1" width="600">
   <img id="image2" src="front_colors/white.png" alt="Image 2" width="600">
   <img id="image3" src="back_colors/white.png" alt="Image 3" width="600">
   <img id="image4" src="strap_colors/white.png" alt="Image 4" width="600">
-  <img id="image5" src="logo_mask/1.png" alt="transparent.png" width="600">
+  <img id="image5" src="logo_mask/0.png" alt="transparent.png" width="600">
 
 </div>
 
@@ -160,8 +122,12 @@
 
 
 
+
+
+
 <label for="image5-select">Logo Size:</label>
 <select id="image5-select">
+    <option value="0">0 </option>
     <option value="1">Logo Size 1 </option>
     <option value="2">Logo Size 2 </option>
     <option value="3">Logo Size 3 </option>
@@ -171,8 +137,9 @@
     <option value="7">Logo Size 7 </option>
     <option value="8">Logo Size 8 </option>
     <option value="9">Logo Size 9 </option>
-    <option value="10">Logo Size 10 </option>
 </select>
+
+
 
 
 
@@ -409,9 +376,7 @@
 
 
 
-                  
-
-
+                
 <style>
 #image-container {
   position: center;
