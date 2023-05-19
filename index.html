@@ -18,7 +18,7 @@
   }
 </style>
 
-<h1> FRONT SIDE TEST 10</h1>
+<h1> FRONT SIDE TEST 11</h1>
 
 
 
@@ -62,7 +62,7 @@
     /* Media query for mobile devices */
     @media only screen and (max-width: 450px) {
       #image-container {
-        height: 185px; /* Adjust the height to make it smaller on mobile devices */
+        height: 200px; /* Adjust the height to make it smaller on mobile devices */
       }
     }
   </style>
@@ -156,6 +156,7 @@
     <label for="logo-select">LOGO SIZE:</label>
     <div class="dropdown-container">
       <select id="logo-select" class="dropdown">
+        <option value="0">Logo Size 0</option>
         <option value="1">Logo Size 1</option>
         <option value="2">Logo Size 2</option>
         <option value="3">Logo Size 3</option>
@@ -407,7 +408,6 @@
 
 
 
-
 <style>
   .form-group {
     display: flex;
@@ -433,14 +433,28 @@
   }
 
   @media only screen and (max-width: 450px) {
-
+    .form-group {
+      margin-bottom: 20px;
+    }
 
     .dropdown {
       padding: 60px 60px;
       font-size: 35px;
     }
+
+    .dropdown#logo {
+      padding: 60px 175px; /* Adjust padding to match other buttons */
+    }
   }
 </style>
+
+
+
+
+
+
+
+
 
 
 
