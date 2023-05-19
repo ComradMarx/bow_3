@@ -10,10 +10,26 @@
 
 
 
+<style>
+  h1 {
+    text-align: center;
+    margin-top: 4vh;
+    transform: translateY(-50%);
+  }
+</style>
+
+<h1>FRONT SIDE TEST 6</h1>
+
 
 
 
 <head>
+
+
+
+
+
+
   <style>
     /* Define flex container styles */
     .flex-container {
@@ -21,12 +37,12 @@
       justify-content: center;
       align-items: center;
     }
-    
+
     /* Styles for image container */
     #image-container {
       position: relative;
       width: 800px; /* Adjust the width as needed */
-      height: 450px; /* Adjust the height as needed */
+      height: 450px; /* Adjust the default height as needed */
     }
 
     /* Styles for individual images */
@@ -42,7 +58,20 @@
       height: 100%;
       object-fit: contain;
     }
+
+    /* Media query for mobile devices */
+    @media only screen and (max-width: 450px) {
+      #image-container {
+        height: 300px; /* Adjust the height to make it smaller on mobile devices */
+      }
+    }
   </style>
+
+<!-- Your HTML code for the image container -->
+
+
+
+
 </head>
 <body>
   <div class="flex-container">
@@ -404,10 +433,16 @@
     text-align: center;
   }
 
-  @media only screen and (max-width: 350px) {
+  @media only screen and (max-width: 450px) {
+
+    .form-group {
+          margin-bottom: 20px;
+        } 
+
+
     .dropdown {
-      padding: 150px 250px; /* Adjust padding to increase button size */
-      font-size: 70px; /* Adjust font size if needed */
+      padding: 200px 300px; /* Adjust padding to increase button size */
+      font-size: 80px; /* Adjust font size if needed */
     }
   }
 </style>
