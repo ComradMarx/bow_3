@@ -44,7 +44,7 @@
 </style>
 
 <div class="h1-container">
-  <h2>DESIGN SIDE 1 -- (REVERSIBLE TIES) V5</h2>
+  <h2>DESIGN SIDE 1 -- (REVERSIBLE TIES) V6</h2>
 </div>
 
 
@@ -71,7 +71,7 @@
     #image-container {
       position: relative;
       width: 800px; /* Adjust the width as needed */
-      height: 400px; /* Adjust the default height as needed */
+      height: 500px; /* Adjust the default height as needed */
     }
 
     /* Styles for individual images */
@@ -92,6 +92,8 @@
     @media only screen and (max-width: 450px) {
       #image-container {
         height: 200px; /* Adjust the height to make it smaller on mobile devices */
+        width: 450; /* Adjust the height to make it smaller on mobile devices */
+
       }
     }
   </style>
@@ -514,10 +516,13 @@
       border-radius: 12px;
       -moz-appearance: none;
       appearance: none;
-      text-align-last: center; /* Center the selected text */
+      overflow: hidden; /* Hide the overflowing text */
+      white-space: nowrap; /* Prevent text wrapping */
+      text-overflow: ellipsis; /* Show an ellipsis (...) if the text exceeds the width */
     }
   }
 </style>
+
 
 
 
